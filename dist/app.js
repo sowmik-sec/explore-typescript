@@ -1,4 +1,12 @@
 "use strict";
-var message = "Hello Typescript";
-var message2 = "Bye bye Javascript";
-console.log(message, message2, language);
+// const message = "Hello Typescript";
+// const message2 = "Bye bye Javascript";
+// console.log(message, message2, language);
+// let myName: string;
+// myName = "Sowmik";
+// let age: number | string;
+// age = "27";
+// let isMarried: boolean;
+// isMarried = false;
+var myName = "Ahsan";
+myName = "Habib";
