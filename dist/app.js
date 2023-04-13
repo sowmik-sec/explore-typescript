@@ -8,5 +8,5 @@
 // age = "27";
 // let isMarried: boolean;
 // isMarried = false;
-var myName = "Ahsan";
-myName = "Habib";
+// let myName: "Ahsan" | "Habib" = "Ahsan";
+// myName = "Habib";

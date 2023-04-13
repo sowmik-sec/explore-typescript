@@ -18,8 +18,8 @@
 // };
 // console.log(add(4, 5, 2, 15));
 
-let add: (num1: number, num2: number, num3?: number) => number;
-add = (num1, num2, num3 = 0): number => {
-  return num1 + num2 + num3;
-};
-console.log(add(36, 25, 4));
+// let add: (num1: number, num2: number, num3?: number) => number;
+// add = (num1, num2, num3 = 0): number => {
+//   return num1 + num2 + num3;
+// };
+// console.log(add(36, 25, 4));

@@ -13,5 +13,5 @@
 // let isMarried: boolean;
 // isMarried = false;
 
-let myName: "Ahsan" | "Habib" = "Ahsan";
-myName = "Habib";
+// let myName: "Ahsan" | "Habib" = "Ahsan";
+// myName = "Habib";
