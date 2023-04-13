@@ -10,6 +10,6 @@
 // console.log(arr);
 // arr = [351, 613, 974];
 // console.log(arr);
-var players;
-players = ["Habib", 27, false];
-console.log(players);
+// let players: [string, number, boolean];
+// players = ["Habib", 27, false];
+// console.log(players);
