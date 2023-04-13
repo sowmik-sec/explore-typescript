@@ -19,40 +19,46 @@
 //   return num1 + num2 + num3;
 // };
 
-// type Address = {
-//   present: string;
-//   permanent: string;
-// };
-// type Favorite = {
-//   type: "food" | "player" | "star";
-//   value: string;
-// };
+type Address = {
+  present: string;
+  permanent: string;
+};
+type Favorite = {
+  type: "food" | "player" | "star";
+  value: string;
+};
 
-// type Auth = {
-//   isLoggedIn: boolean;
-// };
+type Auth = {
+  isLoggedIn: boolean;
+};
 
-// type Person = {
-//   name: string;
-//   age: number;
-//   phone: string | string[];
-//   address: Address;
-//   favorite: Favorite[];
-// } & Auth;
+type Person = {
+  name: string;
+  age: number;
+  phone: string | string[];
+  address: Address;
+  favorite: Favorite[];
+} & Auth;
 
-// const person: Person = {
-//   name: "Ahsan",
-//   age: 27,
-//   phone: "01333333333",
-//   address: {
-//     present: "Bhurungamari",
-//     permanent: "Bhurungamari",
-//   },
-//   favorite: [
-//     { type: "food", value: "Biriyani" },
-//     { type: "star", value: "Melody" },
-//   ],
-//   isLoggedIn: false,
-// };
+const person: Person = {
+  name: "Ahsan",
+  age: 27,
+  phone: "01333333333",
+  address: {
+    present: "Bhurungamari",
+    permanent: "Bhurungamari",
+  },
+  favorite: [
+    { type: "food", value: "Biriyani" },
+    { type: "star", value: "Melody" },
+  ],
+  isLoggedIn: false,
+};
 
-// console.log(person);
+if (Array.isArray(person.phone)) {
+  person.phone.map((val) => val.toLowerCase);
+} else {
+  person.phone.toLowerCase();
+}
+
+console.log(person);
