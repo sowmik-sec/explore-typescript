@@ -40,3 +40,16 @@ let myUser: User = {
 };
 
 myUser.email = "habib@gmail.com";
+
+type cardNumber = {
+  cardnumber: string;
+};
+
+type cardDate = {
+  cardDate: string;
+};
+
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };
