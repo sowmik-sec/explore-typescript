@@ -19,13 +19,24 @@ function createCourse(): { name: string; price: number } {
 console.log(createCourse());
 
 type User = {
+  readonly _id: string;
   name: string;
   email: string;
   isActive: boolean;
+  creditCardDetails?: number;
 };
 
-function createUser(user: User) {
+function createUser(u: User) {
   return { name: "", email: "", isActive: true };
 }
 
-createUser({ name: "", email: "", isActive: true });
+createUser({ _id: "234", name: "", email: "", isActive: true });
+
+let myUser: User = {
+  _id: "1234",
+  name: "ahsan",
+  email: "ah@san.com",
+  isActive: true,
+};
+
+myUser.email = "habib@gmail.com";
